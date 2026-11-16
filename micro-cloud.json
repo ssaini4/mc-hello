@@ -1,0 +1,6 @@
+{
+  "services": {
+    "web": { "dockerfile": "Dockerfile", "public": true, "memory": "512Mi", "maxInstances": 2 }
+  },
+  "migrate": { "service": "web", "command": ["bun", "src/migrate.ts"] }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@micro-cloud/sdk",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./auth": "./src/auth.ts",
+    "./log": "./src/log.ts",
+    "./config": "./src/config.ts",
+    "./db": "./src/db.ts",
+    "./storage": "./src/storage.ts",
+    "./health": "./src/health.ts",
+    "./mcp": "./src/mcp.ts",
+    "./web-auth": "./src/web-auth.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "hono": "4.13.18",
+    "jose": "6.2.17",
+    "postgres": "4.1.1",
+    "zod": "4.6.7"
+  }
+}

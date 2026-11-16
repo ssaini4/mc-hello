@@ -1,0 +1,21 @@
+{
+  "name": "hello",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development DEV_AUTH=1 bun --watch src/index.tsx",
+    "migrate": "bun src/migrate.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@micro-cloud/sdk": "file:./vendor/sdk",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "hono": "4.13.18",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.4",
+    "typescript": "7.0.2"
+  }
+}
